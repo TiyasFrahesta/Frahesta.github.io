@@ -2,14 +2,7 @@
 <html lang="en">
     <head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171620673-1"></script>
-	<script>
- 	 window.dataLayer = window.dataLayer || [];
- 	 function gtag(){dataLayer.push(arguments);}
- 	 gtag('js', new Date());
 
- 	 gtag('config', 'UA-171620673-1');
-	</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <!-- Required meta tags -->
@@ -18,9 +11,7 @@
         <link rel="icon" href="img/yas3.png" type="image/png">
         <title>Frahesta</title>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<meta property="og:image" content="/image.png"/> 
-		<meta property="og:type" content=”Portfolio” />
-<link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
 
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -33,22 +24,31 @@
         <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
         <link rel="stylesheet" href="css/style.css">
 		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
-
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" href="css/responsive.css">
 		
     </head>
-    <body>
+    <body id="darkmode" style="background: #222222;">
         
         <!--================Header Menu Area =================-->
-        <header class="header_area">
+        <header class="header_area" >
             <div class="main_menu">
             	<nav class="navbar navbar-expand-sm " style="background-color: transparent;">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index"><img src="img/logo.png" alt="" ></a>
-						 
+						<h6><i class="fa fa-code"></i> Frahesta</h6>
+						
+					
+					<div class="btn-group" style="border-color: white;">
+<button style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);margin-right: 5px; border-radius: 50%; " class="btn btn-circle fa fa-moon-o " onclick="setDarkMode(false)" ></button>	 
+					<button style="background-color: white;border-radius: 50%; color: rgb(0, 0, 0);" class="btn btn-circle fa fa-sun-o "onclick="setDarkMode(true)"></button>	
+</div> 
 					</div>
+					
             	</nav>
             </div>
 		</header>
@@ -58,20 +58,20 @@
         <!--================Header Menu Area =================-->
         
         <!--================Home Banner Area =================-->
-        <section class="home_banner_area" >
+        <section class="home_banner_area" id="darkmode" >
 			<div class="black_1">
-           	<div class="container box_1620" style="margin-top:-100px ; box-shadow:2mm 2mm 2mm black   ;">
+           	<div class="container box_1620" style=" box-shadow:2mm 2mm 2mm black   ; margin-top: -100px;" id="darkmode">
            		<div class="banner_inner d-flex align-items-center">
 					<div class="banner_content">
 						<div class="media">
-							<div class="d-flex">
+							<div class="d-flex animate-bounce">
 								<img src="img/yas3.png" alt="..." loading="lazy" alt="main_image " style="border-radius: 50%; box-shadow : 5px 5px 5px hsl(0deg 0% 0% / 0.5);">
 							</div>
 							<div class="media-body">
 								<div class="personal_text">
 									<h5>Hi everyone, I'am</h5>
 									<div class="Hello"> <h3>Tiyas Frahesta </h3> </div>
-									<h4 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; text-decoration: solid; ">From <span style="color: White;">Indonesia</span></h4>
+									<h4 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; text-decoration: solid; ">From <span class="animate-pulse" style=" color: White;padding-left: 1px; padding-right: 10px; background-color: aqua;">Indonesia</span></h4>
 
 									<p>I design and develop experiences. <br>
 All about programming <br> I want to be a reliable person in that field</p>
@@ -104,18 +104,18 @@ All about programming <br> I want to be a reliable person in that field</p>
         <!--================End Home Banner Area =================-->
         
         <!--================Welcome Area =================-->
-        <section class="welcome_area p_120">
+        <section class="welcome_area p_120" id="darkmode"style="margin-top: -200px; text-align:center ;">
         	<div class="container">
         		<div class="row welcome_inner">
         			<div class="col-lg-6">
         				<div class="welcome_text">
-        					<h4 style="margin-top: -50px; text-align:center ;">About Make This Web</h4>
+        					<h4 style="margin-top: 200px; text-align:center ;">About Make This Web</h4>
 	<div class="row">
 								<div class="col-md-4">
 									<div class="wel_item">
 										<i class="fa fa-spoon" aria-hidden="true"></i>
         								<h4>Eat</h4>
-        							</div>
+        							</div> 
         						</div>
         						<div class="col-md-4">
         							<div class="wel_item">
@@ -155,7 +155,7 @@ All about programming <br> I want to be a reliable person in that field</p>
 						<div class="tools_expert">
         					<div class="skill_main">
 								<div class="skill_item">
-									<h4> HTML<i class="fa fa-html5" aria-hidden="true"></i> <span class="counter"> 30</span>%</h4>
+									<h4  style="margin-top: 220px; "> HTML<i class="fa fa-html5" aria-hidden="true"></i> <span class="counter"> 30</span>%</h4>
 									<div class="progress_br">
 										<div class="progress">
 											<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -187,7 +187,7 @@ All about programming <br> I want to be a reliable person in that field</p>
 									</div>
 								</div>
 
-								<div class="skill_item">
+								<div class="skill_item ">
 									<h4>Font Awesome & DaisyUI<i class="fa fa-" ></i> <span class="counter">15</span>%</h4>
 									<div class="progress_br">
 										<div class="progress">
@@ -202,8 +202,9 @@ All about programming <br> I want to be a reliable person in that field</p>
         	</div>
         </section>
         <!--================End Welcome Area =================-->
-      <svg xmlns="http://www.w3.org/2000/svg" style="box-shadow: 2mm 2mm 2mm;" viewBox="0 0 1440 320"><path fill="#222222" fill-opacity="1" d="M0,256L34.3,266.7C68.6,277,137,299,206,277.3C274.3,256,343,192,411,138.7C480,85,549,43,617,69.3C685.7,96,754,192,823,192C891.4,192,960,96,1029,85.3C1097.1,75,1166,149,1234,186.7C1302.9,224,1371,224,1406,224L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>  <!--================My Tabs Area =================-->
-        <section class="mytabs_area p_120">
+<svg id="darkmode" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#222222" fill-opacity="1" d="M0,256L34.3,266.7C68.6,277,137,299,206,277.3C274.3,256,343,192,411,138.7C480,85,549,43,617,69.3C685.7,96,754,192,823,192C891.4,192,960,96,1029,85.3C1097.1,75,1166,149,1234,186.7C1302.9,224,1371,224,1406,224L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>  <!--================My Tabs Area =================-->
+      
+        <section class="mytabs_area p_120" id="darkmode1">
         	<div class="container">
         		<div class="tabs_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -294,13 +295,13 @@ All about programming <br> I want to be a reliable person in that field</p>
         </section>
 		
 		
-		<svg xmlns="http://www.w3.org/2000/svg" style="box-shadow: 2mm 2mm 2mm;" viewBox="0 0 1440 320"><path fill="#222222" fill-opacity="1" d="M0,288L15,256C30,224,60,160,90,144C120,128,150,160,180,160C210,160,240,128,270,117.3C300,107,330,117,360,144C390,171,420,213,450,197.3C480,181,510,107,540,106.7C570,107,600,181,630,218.7C660,256,690,256,720,218.7C750,181,780,107,810,74.7C840,43,870,53,900,58.7C930,64,960,64,990,90.7C1020,117,1050,171,1080,192C1110,213,1140,203,1170,197.3C1200,192,1230,192,1260,181.3C1290,171,1320,149,1350,160C1380,171,1410,213,1425,234.7L1440,256L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z"></path></svg>
+		<svg id="darkmode" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#222222" fill-opacity="1" d="M0,288L15,256C30,224,60,160,90,144C120,128,150,160,180,160C210,160,240,128,270,117.3C300,107,330,117,360,144C390,171,420,213,450,197.3C480,181,510,107,540,106.7C570,107,600,181,630,218.7C660,256,690,256,720,218.7C750,181,780,107,810,74.7C840,43,870,53,900,58.7C930,64,960,64,990,90.7C1020,117,1050,171,1080,192C1110,213,1140,203,1170,197.3C1200,192,1230,192,1260,181.3C1290,171,1320,149,1350,160C1380,171,1410,213,1425,234.7L1440,256L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z"></path></svg>
         <!--================End My Tabs Area =================-->
         </section>
         <!--================End Home Gallery Area =================-->
         
         <!--================Testimonials Area =================-->
-      <section class="testimonials_area p_120">
+      <section class="testimonials_area p_120" id="darkmode">
         	<div class="container">
         		
 				<div class="main_title" style="margin-bottom:-10px ;">
@@ -362,10 +363,10 @@ All about programming <br> I want to be a reliable person in that field</p>
         		</div> 
         	</div>
         </section>  
-		<section class="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100">
+		<section class="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100" id="darkmode">
 	<div class="container p-6 mx-auto space-y-8">
 		<div class="space-y-2 text-center">
-			<h2 class="text-3xl font-bold">Berita Berita dari Internet</h2>
+			<h2 class="text-3xl font-bold animate-bounce ">Berita Berita dari Internet</h2>
 			<p class="font-serif text-sm dark:text-gray-400">Yang Mungkin Anda Sukai</p>
 		</div>
 		<div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
@@ -429,7 +430,7 @@ All about programming <br> I want to be a reliable person in that field</p>
 	</div>
 	
 </section>
-<section class="dark:bg-gray-800 dark:text-gray-100">
+<section class="dark:bg-gray-800 dark:text-gray-100" id="darkmode">
 	<div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
 		<a rel="noopener noreferrer" href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
 			<img src="https://source.unsplash.com/random/480x360" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500">
@@ -495,7 +496,7 @@ All about programming <br> I want to be a reliable person in that field</p>
 	</div>
 	
 </section>
-<section class="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
+<section id="darkmode" class="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
 	<div class="container mx-auto space-y-12">
 		<div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
 			<img src="https://source.unsplash.com/640x480/?1" alt="" class="h-80 dark:bg-gray-500 aspect-video">
@@ -528,15 +529,9 @@ All about programming <br> I want to be a reliable person in that field</p>
 	</div>
 </section>
         <!--================End Testimonials Area =================-->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#222222" fill-opacity="1" d="M0,96L26.7,90.7C53.3,85,107,75,160,80C213.3,85,267,107,320,106.7C373.3,107,427,85,480,90.7C533.3,96,587,128,640,138.7C693.3,149,747,139,800,117.3C853.3,96,907,64,960,96C1013.3,128,1067,224,1120,240C1173.3,256,1227,192,1280,181.3C1333.3,171,1387,213,1413,234.7L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>      <!--================Footer Area =================-->
+  <svg id="darkmode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#222222" fill-opacity="1" d="M0,96L26.7,90.7C53.3,85,107,75,160,80C213.3,85,267,107,320,106.7C373.3,107,427,85,480,90.7C533.3,96,587,128,640,138.7C693.3,149,747,139,800,117.3C853.3,96,907,64,960,96C1013.3,128,1067,224,1120,240C1173.3,256,1227,192,1280,181.3C1333.3,171,1387,213,1413,234.7L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>      <!--================Footer Area =================-->
       <footer class="px-4 divide-y dark:text-gray-100" style="background-color: #222222;">
 	<div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-		<div class="lg:w-1/3">
-			<a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
-				<div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
-				</div>
-			</a>
-		</div>
 		<div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 			<div class="space-y-3">
 				<h3 class="tracking-wide uppercase dark:text-gray-50">Product</h3>
@@ -621,11 +616,44 @@ All about programming <br> I want to be a reliable person in that field</p>
         <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
         <script src="vendors/isotope/isotope.pkgd.min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <!-- <script src="js/jquery.ajaxchimp.min.js"></script> -->
-        <!-- <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script> -->
-        <!-- <script src="js/mail-script.js"></script> -->
+        <script src="vendors/popup/jquery.magnific-popup.min.js">    </script>  
         <script src="js/theme.js"></script>
+		<style>
+			#darkMode  #darkmode {
+				background-color: whitesmoke;
+				color:black;
+			}
+			#darkMode .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 .tabs_inner .tab-content .tab-pane .list li .media .d-flex p {
+				color: black;
+			}
+
+			#darkMode .home_banner_area {
+  background-image: linear-gradient( 112.1deg,  rgb(255, 255, 255) , #ffffff 70.2% );
+			}
+			#darkMode .home_banner_area .box_1620{
+  background-image: linear-gradient( 112.1deg,  rgb(255, 255, 255) , #000000 70.2% );
+				
+			}
+			#darkMode .home_banner_area .banner_inner .home_banner_area .box_1620{
+				background-color: rgb(255, 255, 255);
+				
+			}
+			#darkMode .home_banner_area .banner_inner .banner_content {
+				color: white;
+			}
+			#darkMode .media-body .personal_text .Hello H5{
+				color:red ;
+			}
+		</style>
+		<script>
+			function setDarkMode(isDark){
+				if (isDark){
+					document.body.setAttribute('id','darkMode')
+				}
+				else{
+					document.body.setAttribute('id','')
+				}
+			}
+		</script>
     </body>
 </html>
