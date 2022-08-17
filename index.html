@@ -40,12 +40,12 @@
             	<nav class="navbar navbar-expand-sm " style="background-color: transparent;">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<h6><i class="fa fa-code"></i> Frahesta</h6>
+						<h5 id="darkmode1" style="font-size:30px; font-family:teko,sans-serif;"><i style="color:deepskyblue;" class="fa fa-code"></i> Frahesta</h5>
 						
 					
-					<div class="btn-group" style="border-color: white;">
-<button style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);margin-right: 5px; border-radius: 50%; " class="btn btn-circle fa fa-moon-o " onclick="setDarkMode(false)" ></button>	 
-					<button style="background-color: white;border-radius: 50%; color: rgb(0, 0, 0);" class="btn btn-circle fa fa-sun-o "onclick="setDarkMode(true)"></button>	
+					<div id="darkmode1" class="btn-group" style="border-color: white;">
+<button id="darkmode1" style="background-color: transparent; color:white;font-size:20; margin-right: 5px;border:none; border-radius: 50%; " class="btn btn-circle fa fa-moon-o " onclick="setDarkMode(false)" ></button>	 
+					<button id="darkmode1" style="font-size:20; background-color: transparent;border:none; border-radius: 50%; color:white;" class="btn btn-circle fa fa-sun-o "onclick="setDarkMode(true)"></button>	
 </div> 
 					</div>
 					
@@ -622,6 +622,10 @@ All about programming <br> I want to be a reliable person in that field</p>
 			#darkMode  #darkmode {
 				background-color: #808080;
 				color:white;
+				text-decoration: none;
+			}
+			#darkMode  #darkmode1 {
+				color:black;
 				text-decoration: none;
 			}
 			#darkMode .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 .tabs_inner .tab-content .tab-pane .list li .media .d-flex p {
